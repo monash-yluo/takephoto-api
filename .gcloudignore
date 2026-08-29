@@ -1,0 +1,11 @@
+# Controls what gcloud uploads as the build context for Cloud Build.
+# IMPORTANT: unlike .gitignore, this does NOT exclude images/ — the dataset
+# must be present at build time so /api/takephoto has images to serve.
+.git
+.gitignore
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.log
+.env
