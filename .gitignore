@@ -1,0 +1,104 @@
+# =========================================================================
+# Python standard .gitignore  (FIT3184 SmartPark - takephoto-api)
+# Place at the repo root: A1/takephoto-api/.gitignore
+# =========================================================================
+
+# ---------------- Python bytecode / caches ----------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# ---------------- Virtual environments ----------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ---------------- Build / packaging artifacts ----------------
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ---------------- Testing / coverage / lint ----------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+coverage.xml
+.benchmarks/
+
+# ---------------- Type checking ----------------
+.pyre/
+.pytype/
+
+# ---------------- Environment / secrets ----------------
+.env
+.env.local
+.env.*
+!.env.example
+
+# ---------------- Logs ----------------
+*.log
+logs/
+
+# ---------------- Jupyter / notebook ----------------
+.ipynb_checkpoints/
+*_nbconvert_*.py
+
+# ---------------- Database dumps / local data ----------------
+*.sqlite3
+*.db
+*.sql
+
+# ---------------- OS files ----------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------- IDE / editor ----------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================================================================
+# Dataset (OPTIONAL)
+# -------------------------------------------------------------------------
+# The images/ folder holds ~1010 provided dataset images (~300 MB). It is
+# TEACHER-PROVIDED DATA, not your code. Committing it makes the repo very
+# large and slows Cloud Run source builds.
+#
+# Cookbook:
+#   * If you WANT to commit the images (simplest, everything works out of the
+#     box): leave the line below commented out.  ->  # images/
+#   * If you DON'T want them in git (recommended): uncomment it and provide a
+#     fetch/mount mechanism (e.g. a download script, a GCS bucket mount, or
+#     commit only a handful of images).
+#
+images/
+# =========================================================================
